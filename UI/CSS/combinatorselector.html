@@ -1,0 +1,41 @@
+<!-- descedent selector-space  used for styling chld and grandchild
+child selector   >
+adjacent sibling selector  +
+general sibling selector  ~ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div p{
+            background-color: aqua;
+        } */
+
+        /* div>p{
+            background-color: gray;   
+        } */
+        /* div+p{
+            background-color: magenta;
+        } */
+        div~p{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is para1</p>
+        <p>This is para2</p>
+        <p>This is para3</p>
+        <p>This is para4</p>
+        <section>
+            <p>This is para5</p>
+        </section>
+    </div>
+    <p>This is Para6</p>
+    <p>This is Para7</p>
+</body>
+</html>

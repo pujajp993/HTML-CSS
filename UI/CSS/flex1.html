@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        h1{
+            margin: 0;
+        }
+        .container{
+            background-color: lightblue;
+             display: flex; /* horozontal direction */
+            /* flex-direction: column;  colum wise display */
+            /* flex-direction: row-reverse; */
+            /* justify-content: center; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-between; */
+            /* justify-content:space-around; */
+            /* justify-content: space-evenly; */
+            height: 400px;
+            /* align-items: center; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-flow: row wrap; */
+
+        }
+        .one,.two,.three{
+            width: 300px;
+            height: 200px;
+            background-color: orange;
+            border: 1px solid white;
+            text-align: center;
+            padding: 5px;
+            /* float: left; */
+            /* flex-wrap: wrap; */
+        }
+        /* .three{
+            float: right;
+        }
+        footer{
+            background-color: red;
+        } */
+
+/* 
+        .one,.two,.three{
+            flex: 1;
+        }
+        .two{
+            flex: 2;
+
+        }
+        .three{
+            flex:3
+        } */
+
+        .one{
+            order: 2;
+        }
+        .two{
+            order: 3;
+        }
+        .three{
+            order: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="one">
+            <h1>section 1</h1>
+        </div>
+        <div class="two">
+            <h1>section 2</h1>
+        </div>
+        <div class="three">
+            <h1>section 3</h1>
+        </div>
+    </div>
+    <!-- <footer>test</footer>
+    <footer>test</footer>
+    <footer>test</footer>
+    <footer>test</footer> -->
+</body>
+</html>

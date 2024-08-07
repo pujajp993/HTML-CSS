@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* css[attribute]Selector */
+        /* a[target]{
+            background-color: green;
+        } */
+
+         /* css[attribute=value]Selector */ -->
+        /* a[target="_blank"]{
+            background-color: green;
+        } */
+
+        /* [title~="flower"]{
+            border: 15px solid red;
+        } */
+
+        /* [class|="top"]{
+            background-color: yellow;
+        } */
+
+        /* [class^="top"]{
+            background-color: aqua;
+        } */
+
+        /* [class$='test']{
+            background-color: aqua;
+        } */
+
+        [class*='te']{
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- /* css[attribute]Selector */ -->
+    <!-- <a href="https://www.google.com/search?q=emoji&sca_esv=587665533&rlz=1C1RLNS_enAE1063AE1063&sxsrf=AM9HkKl2faZpZPhREgMS5XDfZojWfxwMSg%3A1701695668051&ei=tNBtZdrIAu_97_UPiJOosAM&oq=emo&gs_lp=Egxnd3Mtd2l6LXNlcnAiA2VtbyoCCAAyDhAAGIAEGIoFGJECGLEDMgsQABiABBiKBRiRAjIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzILEAAYgAQYsQMYgwEyChAAGIAEGBQYhwIyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDSIoXUABYzgtwAXgBkAEAmAGPAqAB_AWqAQMyLTO4AQPIAQD4AQGoAhTCAgcQIxjqAhgnwgITEAAYgAQYigUYQxjqAhi0AtgBAcICBBAjGCfCAgoQIxiABBiKBRgnwgILEC4YgAQYsQMYgwHCAhEQLhiABBixAxiDARjHARjRA8ICDhAAGIAEGIoFGLEDGIMBwgIREC4YgwEYxwEYsQMY0QMYgATiAwQYACBBiAYBugYGCAEQARgB&sclient=gws-wiz-serp">Click1</a>
+    <a href="https://www.google.com/search?q=emoji&sca_esv=587665533&rlz=1C1RLNS_enAE1063AE1063&sxsrf=AM9HkKl2faZpZPhREgMS5XDfZojWfxwMSg%3A1701695668051&ei=tNBtZdrIAu_97_UPiJOosAM&oq=emo&gs_lp=Egxnd3Mtd2l6LXNlcnAiA2VtbyoCCAAyDhAAGIAEGIoFGJECGLEDMgsQABiABBiKBRiRAjIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzILEAAYgAQYsQMYgwEyChAAGIAEGBQYhwIyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDSIoXUABYzgtwAXgBkAEAmAGPAqAB_AWqAQMyLTO4AQPIAQD4AQGoAhTCAgcQIxjqAhgnwgITEAAYgAQYigUYQxjqAhi0AtgBAcICBBAjGCfCAgoQIxiABBiKBRgnwgILEC4YgAQYsQMYgwHCAhEQLhiABBixAxiDARjHARjRA8ICDhAAGIAEGIoFGLEDGIMBwgIREC4YgwEYxwEYsQMY0QMYgATiAwQYACBBiAYBugYGCAEQARgB&sclient=gws-wiz-serp" target="_blank">Click1</a>
+    <a href="https://www.google.com/search?q=emoji&sca_esv=587665533&rlz=1C1RLNS_enAE1063AE1063&sxsrf=AM9HkKl2faZpZPhREgMS5XDfZojWfxwMSg%3A1701695668051&ei=tNBtZdrIAu_97_UPiJOosAM&oq=emo&gs_lp=Egxnd3Mtd2l6LXNlcnAiA2VtbyoCCAAyDhAAGIAEGIoFGJECGLEDMgsQABiABBiKBRiRAjIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzILEAAYgAQYsQMYgwEyChAAGIAEGBQYhwIyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDSIoXUABYzgtwAXgBkAEAmAGPAqAB_AWqAQMyLTO4AQPIAQD4AQGoAhTCAgcQIxjqAhgnwgITEAAYgAQYigUYQxjqAhi0AtgBAcICBBAjGCfCAgoQIxiABBiKBRgnwgILEC4YgAQYsQMYgwHCAhEQLhiABBixAxiDARjHARjRA8ICDhAAGIAEGIoFGLEDGIMBwgIREC4YgwEYxwEYsQMY0QMYgATiAwQYACBBiAYBugYGCAEQARgB&sclient=gws-wiz-serp">Click1</a>
+    <a href="https://www.google.com/search?q=emoji&sca_esv=587665533&rlz=1C1RLNS_enAE1063AE1063&sxsrf=AM9HkKl2faZpZPhREgMS5XDfZojWfxwMSg%3A1701695668051&ei=tNBtZdrIAu_97_UPiJOosAM&oq=emo&gs_lp=Egxnd3Mtd2l6LXNlcnAiA2VtbyoCCAAyDhAAGIAEGIoFGJECGLEDMgsQABiABBiKBRiRAjIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzILEAAYgAQYsQMYgwEyChAAGIAEGBQYhwIyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDSIoXUABYzgtwAXgBkAEAmAGPAqAB_AWqAQMyLTO4AQPIAQD4AQGoAhTCAgcQIxjqAhgnwgITEAAYgAQYigUYQxjqAhi0AtgBAcICBBAjGCfCAgoQIxiABBiKBRgnwgILEC4YgAQYsQMYgwHCAhEQLhiABBixAxiDARjHARjRA8ICDhAAGIAEGIoFGLEDGIMBwgIREC4YgwEYxwEYsQMY0QMYgATiAwQYACBBiAYBugYGCAEQARgB&sclient=gws-wiz-serp" target="_parent" >Click1</a>
+     -->
+    
+     <!-- /* css[attribute="value"]Selector */ -->
+
+     <!-- <a href="https://www.google.com/search?q=emoji&sca_esv=587665533&rlz=1C1RLNS_enAE1063AE1063&sxsrf=AM9HkKl2faZpZPhREgMS5XDfZojWfxwMSg%3A1701695668051&ei=tNBtZdrIAu_97_UPiJOosAM&oq=emo&gs_lp=Egxnd3Mtd2l6LXNlcnAiA2VtbyoCCAAyDhAAGIAEGIoFGJECGLEDMgsQABiABBiKBRiRAjIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzILEAAYgAQYsQMYgwEyChAAGIAEGBQYhwIyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDSIoXUABYzgtwAXgBkAEAmAGPAqAB_AWqAQMyLTO4AQPIAQD4AQGoAhTCAgcQIxjqAhgnwgITEAAYgAQYigUYQxjqAhi0AtgBAcICBBAjGCfCAgoQIxiABBiKBRgnwgILEC4YgAQYsQMYgwHCAhEQLhiABBixAxiDARjHARjRA8ICDhAAGIAEGIoFGLEDGIMBwgIREC4YgwEYxwEYsQMY0QMYgATiAwQYACBBiAYBugYGCAEQARgB&sclient=gws-wiz-serp">Click1</a>
+    <a href="https://www.google.com/search?q=emoji&sca_esv=587665533&rlz=1C1RLNS_enAE1063AE1063&sxsrf=AM9HkKl2faZpZPhREgMS5XDfZojWfxwMSg%3A1701695668051&ei=tNBtZdrIAu_97_UPiJOosAM&oq=emo&gs_lp=Egxnd3Mtd2l6LXNlcnAiA2VtbyoCCAAyDhAAGIAEGIoFGJECGLEDMgsQABiABBiKBRiRAjIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzILEAAYgAQYsQMYgwEyChAAGIAEGBQYhwIyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDSIoXUABYzgtwAXgBkAEAmAGPAqAB_AWqAQMyLTO4AQPIAQD4AQGoAhTCAgcQIxjqAhgnwgITEAAYgAQYigUYQxjqAhi0AtgBAcICBBAjGCfCAgoQIxiABBiKBRgnwgILEC4YgAQYsQMYgwHCAhEQLhiABBixAxiDARjHARjRA8ICDhAAGIAEGIoFGLEDGIMBwgIREC4YgwEYxwEYsQMY0QMYgATiAwQYACBBiAYBugYGCAEQARgB&sclient=gws-wiz-serp" target="_blank">Click1</a>
+    <a href="https://www.google.com/search?q=emoji&sca_esv=587665533&rlz=1C1RLNS_enAE1063AE1063&sxsrf=AM9HkKl2faZpZPhREgMS5XDfZojWfxwMSg%3A1701695668051&ei=tNBtZdrIAu_97_UPiJOosAM&oq=emo&gs_lp=Egxnd3Mtd2l6LXNlcnAiA2VtbyoCCAAyDhAAGIAEGIoFGJECGLEDMgsQABiABBiKBRiRAjIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzILEAAYgAQYsQMYgwEyChAAGIAEGBQYhwIyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDSIoXUABYzgtwAXgBkAEAmAGPAqAB_AWqAQMyLTO4AQPIAQD4AQGoAhTCAgcQIxjqAhgnwgITEAAYgAQYigUYQxjqAhi0AtgBAcICBBAjGCfCAgoQIxiABBiKBRgnwgILEC4YgAQYsQMYgwHCAhEQLhiABBixAxiDARjHARjRA8ICDhAAGIAEGIoFGLEDGIMBwgIREC4YgwEYxwEYsQMY0QMYgATiAwQYACBBiAYBugYGCAEQARgB&sclient=gws-wiz-serp">Click1</a>
+    <a href="https://www.google.com/search?q=emoji&sca_esv=587665533&rlz=1C1RLNS_enAE1063AE1063&sxsrf=AM9HkKl2faZpZPhREgMS5XDfZojWfxwMSg%3A1701695668051&ei=tNBtZdrIAu_97_UPiJOosAM&oq=emo&gs_lp=Egxnd3Mtd2l6LXNlcnAiA2VtbyoCCAAyDhAAGIAEGIoFGJECGLEDMgsQABiABBiKBRiRAjIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzILEAAYgAQYsQMYgwEyChAAGIAEGBQYhwIyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDSIoXUABYzgtwAXgBkAEAmAGPAqAB_AWqAQMyLTO4AQPIAQD4AQGoAhTCAgcQIxjqAhgnwgITEAAYgAQYigUYQxjqAhi0AtgBAcICBBAjGCfCAgoQIxiABBiKBRgnwgILEC4YgAQYsQMYgwHCAhEQLhiABBixAxiDARjHARjRA8ICDhAAGIAEGIoFGLEDGIMBwgIREC4YgwEYxwEYsQMY0QMYgATiAwQYACBBiAYBugYGCAEQARgB&sclient=gws-wiz-serp" target="_parent" >Click1</a>
+    <a href="https://www.google.com/search?q=emoji&sca_esv=587665533&rlz=1C1RLNS_enAE1063AE1063&sxsrf=AM9HkKl2faZpZPhREgMS5XDfZojWfxwMSg%3A1701695668051&ei=tNBtZdrIAu_97_UPiJOosAM&oq=emo&gs_lp=Egxnd3Mtd2l6LXNlcnAiA2VtbyoCCAAyDhAAGIAEGIoFGJECGLEDMgsQABiABBiKBRiRAjIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzILEAAYgAQYsQMYgwEyChAAGIAEGBQYhwIyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDSIoXUABYzgtwAXgBkAEAmAGPAqAB_AWqAQMyLTO4AQPIAQD4AQGoAhTCAgcQIxjqAhgnwgITEAAYgAQYigUYQxjqAhi0AtgBAcICBBAjGCfCAgoQIxiABBiKBRgnwgILEC4YgAQYsQMYgwHCAhEQLhiABBixAxiDARjHARjRA8ICDhAAGIAEGIoFGLEDGIMBwgIREC4YgwEYxwEYsQMY0QMYgATiAwQYACBBiAYBugYGCAEQARgB&sclient=gws-wiz-serp" target="_blank">Click1</a> -->
+
+<!-- css[attribute~="value"] -->
+<!-- <img src="a1.jpg" width="150" title="one flower" height="150" alt="">
+<img src="a1.jpg" width="150" title="flower" height="150" alt="">
+<img src="a1.jpg" width="150" title="tree" height="150" alt="">
+<img src="a1.jpg" width="150" title="flow" height="150" alt=""> -->
+
+
+<!-- css[attribute|="value"] -->
+<!-- <h1 class="top-header">This is heading</h1>
+<h1 class="topcontent">This is heading</h1>
+<h1 class="top">This is heading</h1>
+<p class="texttop">This is paragraph</p> -->
+
+
+<!-- css[attribute^="value"] selector -->
+<!-- 
+<h1 class="top-header">This is heading</h1>
+<h1 class="topcontent">This is heading</h1>
+<h1 class="top">This is heading</h1>
+<p class="text-top">This is paragraph</p> -->
+
+<!-- css[attribute$="value"] selector that is end with  particilar we give.here it is "test" dispaly the curresponding -->
+<!-- <div class="first-test">This is div element</div>
+<div class="second">This is div element</div>
+<div class="mytest">This is div element</div>
+<div class="test-first">This is div element</div>
+<div class="secondtest">This is div element</div> -->
+
+
+<!-- css[attribute*="value"] selector -->
+<div class="first_test">This is div element</div>
+<div class="second">This is div element</div>
+<div class="my-test">This is div element</div>
+<div class="test-first">This is div element</div>
+<div class="secondtest">This is div element</div>
+
+</body>
+</html>
